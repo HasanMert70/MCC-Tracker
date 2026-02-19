@@ -11,7 +11,8 @@
                 "oderwat.indent-rainbow", //indent-rainbow: colorizes indentation for easier reading
                 "usernamehw.errorlens", //Error Lens: better error highlighting and inline diagnostics
                 "vsls-contrib.gitdoc", //GitDoc: auto commit/push/pull changes on save, edit git repo like a multi-file versioned doc
-                "seunlanlege.action-buttons" //VsCode Action Buttons: add custom buttons to bottom status bar to run actions/tasks
+                "seunlanlege.action-buttons", //VsCode Action Buttons: add custom buttons to bottom status bar to run actions/tasks
+                "mermaidchart.vscode-mermaid-chart" //Mermaid UML support
             ],
             "settings": {
                 "java.server.launchMode": "Standard", //starts container in mode to compile/run code vs. lightweight mode is basically to just read code. starting in standard mode is much slower, read more here: https://code.visualstudio.com/docs/java/java-project#_lightweight-mode
