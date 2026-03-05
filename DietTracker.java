@@ -11,7 +11,7 @@ public class DietTracker extends HealthTracker {
     private String foodName;
     private int calories;
     private double protein; // grams
-    private boolean isSingleMeal;
+    private boolean isSingleMeal; // this object represents a whole (single) meal [true] or a single item [false]
     private String goal;
 
     public DietTracker(double weight, int height,
@@ -108,6 +108,25 @@ public class DietTracker extends HealthTracker {
     }
 
     // GETTERS/ACCESSORS
+    public String getFoodName() {
+        return this.foodName;
+    }
+
+    public int getCalories() {
+        return this.calories;
+    }
+
+    public double getProtein() {
+        return this.protein;
+    }
+
+    public boolean isSingleMeal() {
+        return this.isSingleMeal;
+    }
+
+    public String getGoal() {
+        return this.goal;
+    }
 
     // OTHER REQUIRED METHODS
 
