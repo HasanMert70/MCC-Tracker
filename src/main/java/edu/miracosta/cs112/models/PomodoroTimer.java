@@ -1,3 +1,4 @@
+package edu.miracosta.cs112.models;
 
 public class PomodoroTimer {
     final static int DEFAULT_WORK_DURATION = 25 * 60; //25 mins

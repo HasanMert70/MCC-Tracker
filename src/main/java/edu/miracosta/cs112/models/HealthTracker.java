@@ -1,3 +1,7 @@
+package edu.miracosta.cs112.models;
+
+import edu.miracosta.cs112.UnitMismatchException;
+
 /**
  * CLASS INVARIANT
  * - height must be in total inches
@@ -24,7 +28,7 @@ public abstract class HealthTracker {
         
         if (!isValid) {
             // throw error (checking)
-            throw new IllegalArgumentException("ERROR: bad data given to HealthTracker full constructor");
+            throw new IllegalArgumentException("ERROR: bad data given to edu.miracosta.cs112.models.HealthTracker full constructor");
         }
     }
 
@@ -35,7 +39,7 @@ public abstract class HealthTracker {
     public HealthTracker(HealthTracker original) {
         if (original == null) {
             // throw error (checking)
-            throw new IllegalArgumentException("ERROR: null given to HealthTracker copy constructor");
+            throw new IllegalArgumentException("ERROR: null given to edu.miracosta.cs112.models.HealthTracker copy constructor");
         }
         this.weight = original.weight;
         this.height = original.height;

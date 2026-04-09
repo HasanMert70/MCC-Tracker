@@ -24,16 +24,16 @@ classDiagram
        + toString() : String
    }
 
-   class HealthTracker {
+   class edu.miracosta.cs112.models.HealthTracker {
         <<Abstract>>
        + DEFAULT_WEIGHT : double = 100.0$
        + DEFAULT_HEIGHT : int = 100$
        - weight : double
        - height : int
        - heightOverride : boolean
-       + HealthTracker()
-       + HealthTracker(weight : double, height : int)
-       + HealthTracker(other : HealthTracker)
+       + edu.miracosta.cs112.models.HealthTracker()
+       + edu.miracosta.cs112.models.HealthTracker(weight : double, height : int)
+       + edu.miracosta.cs112.models.HealthTracker(other : edu.miracosta.cs112.models.HealthTracker)
        + getWeight() : double
        + setWeight(weight : double) : void
        + getHeightInInches() : int
@@ -71,7 +71,7 @@ classDiagram
    }
 
 
-   class DietTracker {
+   class edu.miracosta.cs112.models.DietTracker {
        + DEFAULT_FOOD : String = "Water"$
        + DEFAULT_CALORIES : int = 0$
        + DEFAULT_PROTEIN : double = 0.0$
@@ -82,9 +82,9 @@ classDiagram
        - protein : double
        - isSingleMeal : boolean
        - goal : String
-       + DietTracker()
-       + DietTracker(name : String, cal : int, pro : double, single : boolean, goal : String)
-       + DietTracker(other : DietTracker)
+       + edu.miracosta.cs112.models.DietTracker()
+       + edu.miracosta.cs112.models.DietTracker(name : String, cal : int, pro : double, single : boolean, goal : String)
+       + edu.miracosta.cs112.models.DietTracker(other : edu.miracosta.cs112.models.DietTracker)
        + getFoodName() : String
        + setFoodName(name : String) : void
        + getCalories() : int
@@ -99,7 +99,7 @@ classDiagram
        + toString() : String
    }
 
-   class PomodoroTimer {
+   class edu.miracosta.cs112.models.PomodoroTimer {
    - workDuration : int
    - breakDuration : int 
    - remainingTime : int 
@@ -111,12 +111,12 @@ classDiagram
    - alarmSound : String
    }
    
-class UnitMismatchException {
-      + UnitMismatchException()
-      + UnitMismatchException(expected : String)
+class edu.miracosta.cs112.UnitMismatchException {
+      + edu.miracosta.cs112.UnitMismatchException()
+      + edu.miracosta.cs112.UnitMismatchException(expected : String)
    }
 
 
-   HealthTracker <|-- WorkoutTracker : extends
-   HealthTracker <|-- DietTracker : extends
+   edu.miracosta.cs112.models.HealthTracker <|-- WorkoutTracker : extends
+   edu.miracosta.cs112.models.HealthTracker <|-- edu.miracosta.cs112.models.DietTracker : extends
 ```

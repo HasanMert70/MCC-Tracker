@@ -1,3 +1,7 @@
+package edu.miracosta.cs112.models;
+
+import edu.miracosta.cs112.UnitMismatchException;
+
 public class DietTracker extends HealthTracker {
 
     // constant variables
@@ -23,7 +27,7 @@ public class DietTracker extends HealthTracker {
         if (!this.setFoodName(foodName) || !this.setCalories(calories)
                 || !this.setProtein(protein) || !this.setIsSingleMeal(isSingleMeal)
                 || !this.setGoal(goal)) {
-            throw new IllegalArgumentException("ERROR: bad data given to full DietTracker constructor");
+            throw new IllegalArgumentException("ERROR: bad data given to full edu.miracosta.cs112.models.DietTracker constructor");
         }
 
     }
@@ -51,7 +55,7 @@ public class DietTracker extends HealthTracker {
             this.setIsSingleMeal(original.isSingleMeal);
             this.setGoal(original.goal);
         } else {
-            throw new IllegalArgumentException("ERROR: null given to copy DietTracker constructor");
+            throw new IllegalArgumentException("ERROR: null given to copy edu.miracosta.cs112.models.DietTracker constructor");
         }
     }
 

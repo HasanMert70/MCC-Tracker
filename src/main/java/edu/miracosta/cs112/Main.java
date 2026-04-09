@@ -1,8 +1,12 @@
+package edu.miracosta.cs112;
+
+import edu.miracosta.cs112.models.DietTracker;
+
 public class Main {
     public static void main(String[] args) {
         DietTracker tester = new DietTracker();
         DietTracker copyOfTester = new DietTracker(tester); // DEEP COPY!!
-        //HealthTracker copyOfTester = tester; //SHALLOW COPY!!
+        //edu.miracosta.cs112.models.HealthTracker copyOfTester = tester; //SHALLOW COPY!!
 
         System.out.println("Start = " + tester);
         System.out.println("Start Copy= " + copyOfTester);
@@ -33,7 +37,7 @@ public class Main {
         // exception tests
         // error handling for full constructor
         try {
-            // HealthTracker exceptionTest = new HealthTracker(0, 0);
+            // edu.miracosta.cs112.models.HealthTracker exceptionTest = new edu.miracosta.cs112.models.HealthTracker(0, 0);
             /*
              * double weight, int height,
              * String foodName, int calories, double protein,
@@ -51,7 +55,7 @@ public class Main {
     }
 
     // public static void testSetWeight() {
-    // HealthTracker ht = new HealthTracker();
+    // edu.miracosta.cs112.models.HealthTracker ht = new edu.miracosta.cs112.models.HealthTracker();
     // double testWeight = 205.6;
     // boolean isValid = ht.setWeight(testWeight);
     // if (isValid) {
