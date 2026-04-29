@@ -1,9 +1,14 @@
 package edu.miracosta.cs112;
 
 import edu.miracosta.cs112.models.DietTracker;
+import edu.miracosta.cs112.models.UserProfile;
 
 public class Main {
     public static void main(String[] args) {
+
+        UserProfile user = new UserProfile("Hasan", 22, "build muscle", new DietTracker());
+        System.out.println("User profile = " + user);
+
         DietTracker tester = new DietTracker();
         DietTracker copyOfTester = new DietTracker(tester); // DEEP COPY!!
         //edu.miracosta.cs112.models.HealthTracker copyOfTester = tester; //SHALLOW COPY!!
